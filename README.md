@@ -16,7 +16,7 @@ Il permet d'ajouter, lister et (potentiellement) supprimer des tâches.
    ```
 2. Lancez le programme avec Python :
    ```bash
-	python todo.py
+   python todo.py
    ```
 
 ## Prochaines Améliorations (Suggestions)
