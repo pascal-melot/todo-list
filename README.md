@@ -2,6 +2,7 @@
 
 Ce projet est un script Python simple pour gérer une liste de tâches en ligne de commande.  
 Il permet d'ajouter, lister et (potentiellement) supprimer des tâches.
+Les tâches sont persistantes (sauvegardées localement)
 
 ## Fonctionnalités
 - Ajouter une tâche.
@@ -22,4 +23,7 @@ Il permet d'ajouter, lister et (potentiellement) supprimer des tâches.
 ## Prochaines Améliorations (Suggestions)
 - Ajouter une fonctionnalité pour marquer une tâche comme terminée.
 - Permettre de supprimer des tâches spécifiques.
-- Sauvegarder les tâches dans un fichier pour les conserver entre les sessions.
+
+## mise à jour
+- sauvegarde locale des taches (persistance)
+
