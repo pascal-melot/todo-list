@@ -1,7 +1,25 @@
+import os
+
+FICHIER_TACHES = "taches.txt"
+
+def charger_taches():
+    """Charge les tâches depuis le fichier."""
+    if os.path.exists(FICHIER_TACHES):
+        with open(FICHIER_TACHES, "r", encoding="utf-8") as fichier:
+            return [ligne.strip() for ligne in fichier.readlines()]
+    return []
+
+def sauvegarder_taches():
+    """Sauvegarde les tâches dans le fichier."""
+    with open(FICHIER_TACHES, "w", encoding="utf-8") as fichier:
+        for tache in taches:
+            fichier.write(tache + "\n")
+
 taches = []
 
 def ajouter_tache(tache):
     taches.append(tache)
+    sauvegarder_taches()
     print(f"Tâche ajoutée : {tache}")
 
 def lister_taches():
@@ -12,6 +30,7 @@ def lister_taches():
 def supprimer_tache(numero):
     if 1 <= numero <= len(taches):
         tache_supprimee = taches.pop(numero - 1)
+        sauvegarder_taches()
         print(f"Tâche supprimée : {tache_supprimee}")
     else:
         print("Numéro de tâche invalide.")
@@ -40,5 +59,8 @@ def main():
             print("Option invalide.")
 
 if __name__ == "__main__":
+    # Charger les tâches au démarrage
+    taches = charger_taches()
+    lister_taches()
     main()
 
