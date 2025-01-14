@@ -1,7 +1,7 @@
 # Gestionnaire de Tâches (To-Do List)
 
 Ce projet est un script Python simple pour gérer une liste de tâches en ligne de commande.  
-Il permet d'ajouter, lister et (potentiellement) supprimer des tâches.
+Il permet d'ajouter, lister et supprimer des tâches.
 Les tâches sont persistantes (sauvegardées localement)
 
 ## Fonctionnalités
@@ -22,7 +22,6 @@ Les tâches sont persistantes (sauvegardées localement)
 
 ## Prochaines Améliorations (Suggestions)
 - Ajouter une fonctionnalité pour marquer une tâche comme terminée.
-- Permettre de supprimer des tâches spécifiques.
 
 ## mise à jour
 - sauvegarde locale des taches (persistance)
